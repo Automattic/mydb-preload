@@ -1,10 +1,8 @@
-
 /**
  * Module dependencies.
  */
 
 var log = require('log');
-var conf = require('config');
 var Response = require('express').response;
 var debug = require('debug')('mydb-preload');
 
