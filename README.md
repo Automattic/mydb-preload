@@ -22,7 +22,7 @@ that will expose the documents:
 
 ```js
 var preload = require('mydb-preload');
-app.get('/', preload, function(req, res, next){
+app.get('/', preload(), function(req, res, next){
   res.render('homepage.jade');
 });
 ```
