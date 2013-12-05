@@ -2,7 +2,6 @@
  * Module dependencies.
  */
 
-var log = require('log');
 var Response = require('express').response;
 var debug = require('debug')('mydb-preload');
 
@@ -64,7 +63,7 @@ Response.preload = function(url, data, fields){
     }
 
     if (error) {
-      log.error('mydb preload error', err);
+      console.error('mydb preload error', err);
     } else {
       self.req.next(err);
       error = true;
