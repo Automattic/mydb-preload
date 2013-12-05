@@ -57,11 +57,6 @@ Response.preload = function(url, data, fields){
   }
 
   function onerror(err){
-    if ('development' == conf.env) {
-      var state = /ECONN/.test(err.message) ? 'running' : 'up to date';
-      console.warn('\n\033[31mMake sure cloudup-io is %s!\033[39m\n', state);
-    }
-
     if (error) {
       console.error('mydb preload error', err);
     } else {
