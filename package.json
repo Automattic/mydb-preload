@@ -2,6 +2,7 @@
   "name": "mydb-preload",
   "version": "0.1.0",
   "dependencies": {
-    "debug": "*"
+    "debug": "*",
+    "log": "~1.4.0"
   }
 }
