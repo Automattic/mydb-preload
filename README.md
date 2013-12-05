@@ -21,7 +21,7 @@ Then make sure to include the respective middleware in the routes
 that will expose the documents:
 
 ```js
-var preload = require('mydb-preload');
+var preload = require('mydb-preload')();
 app.get('/', preload, function(req, res, next){
   res.render('homepage.jade');
 });
